@@ -7,10 +7,10 @@ import (
 	"net/http"
 	"reflect"
 
-	"github.com/thor/auth"
-	"github.com/thor/auth/auth_identity"
-	"github.com/thor/auth/claims"
-	"github.com/thor/qor/utils"
+	"github.com/windhooked/thor/auth"
+	"github.com/windhooked/thor/auth/auth_identity"
+	"github.com/windhooked/thor/auth/claims"
+	"github.com/windhooked/thor/qor/utils"
 	"golang.org/x/oauth2"
 	"golang.org/x/oauth2/facebook"
 )
@@ -138,7 +138,7 @@ func (FacebookProvider) GetName() string {
 
 // ConfigAuth config auth
 func (provider FacebookProvider) ConfigAuth(auth *auth.Auth) {
-	auth.Render.RegisterViewPath("github.com/thor/auth/providers/facebook/views")
+	auth.Render.RegisterViewPath("github.com/windhooked/thor/auth/providers/facebook/views")
 }
 
 // OAuthConfig return oauth config based on configuration

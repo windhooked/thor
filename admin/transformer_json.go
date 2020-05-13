@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"reflect"
 
-	"github.com/thor/roles"
+	"github.com/windhooked/thor/roles"
 )
 
 // JSONTransformer json transformer

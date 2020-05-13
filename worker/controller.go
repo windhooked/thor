@@ -5,9 +5,9 @@ import (
 	"html/template"
 	"net/http"
 
-	"github.com/thor/admin"
-	"github.com/thor/responder"
-	"github.com/thor/roles"
+	"github.com/windhooked/thor/admin"
+	"github.com/windhooked/thor/responder"
+	"github.com/windhooked/thor/roles"
 )
 
 type workerController struct {

@@ -5,12 +5,12 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/thor/auth"
-	"github.com/thor/auth/auth_identity"
-	"github.com/thor/auth/claims"
-	"github.com/thor/auth/providers/password/encryptor"
-	"github.com/thor/auth/providers/password/encryptor/bcrypt_encryptor"
-	"github.com/thor/session"
+	"github.com/windhooked/thor/auth"
+	"github.com/windhooked/thor/auth/auth_identity"
+	"github.com/windhooked/thor/auth/claims"
+	"github.com/windhooked/thor/auth/providers/password/encryptor"
+	"github.com/windhooked/thor/auth/providers/password/encryptor/bcrypt_encryptor"
+	"github.com/windhooked/thor/session"
 )
 
 // Config password config
@@ -83,10 +83,10 @@ func (Provider) GetName() string {
 
 // ConfigAuth config auth
 func (provider Provider) ConfigAuth(auth *auth.Auth) {
-	auth.Render.RegisterViewPath("github.com/thor/auth/providers/password/views")
+	auth.Render.RegisterViewPath("github.com/windhooked/thor/auth/providers/password/views")
 
 	if auth.Mailer != nil {
-		auth.Mailer.RegisterViewPath("github.com/thor/auth/providers/password/views/mailers")
+		auth.Mailer.RegisterViewPath("github.com/windhooked/thor/auth/providers/password/views/mailers")
 	}
 }
 

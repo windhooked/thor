@@ -5,11 +5,11 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/thor/admin"
-	"github.com/thor/qor"
-	"github.com/thor/qor/resource"
-	"github.com/thor/qor/utils"
-	"github.com/thor/validations"
+	"github.com/windhooked/thor/admin"
+	"github.com/windhooked/thor/qor"
+	"github.com/windhooked/thor/qor/resource"
+	"github.com/windhooked/thor/qor/utils"
+	"github.com/windhooked/thor/validations"
 )
 
 // Slug is a scanner, could be used as field type, then this field could be used as slug field
@@ -39,7 +39,7 @@ func (Slug) ConfigureQorMeta(meta resource.Metaor) {
 	if meta, ok := meta.(*admin.Meta); ok {
 		res := meta.GetBaseResource().(*admin.Resource)
 
-		res.GetAdmin().RegisterViewPath("github.com/thor/slug/views")
+		res.GetAdmin().RegisterViewPath("github.com/windhooked/thor/slug/views")
 		res.UseTheme("slug")
 
 		slugMetaName := meta.Name

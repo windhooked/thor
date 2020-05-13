@@ -6,7 +6,7 @@ import (
 	"html/template"
 	"path/filepath"
 
-	"github.com/thor/qor/utils"
+	"github.com/windhooked/thor/qor/utils"
 )
 
 // Render find widget by name, render it based on current context

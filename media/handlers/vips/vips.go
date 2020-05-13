@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"io"
 
-	"github.com/thor/media"
+	"github.com/windhooked/thor/media"
 	"gopkg.in/h2non/bimg.v1"
 )
 

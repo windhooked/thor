@@ -3,7 +3,7 @@ package resource
 import (
 	"reflect"
 
-	"github.com/thor/qor"
+	"github.com/windhooked/thor/qor"
 )
 
 // MetaValues is slice of MetaValue

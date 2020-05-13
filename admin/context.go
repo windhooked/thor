@@ -7,10 +7,10 @@ import (
 	"net/http"
 	"path/filepath"
 
-	"github.com/thor/qor"
-	"github.com/thor/qor/utils"
-	"github.com/thor/roles"
-	"github.com/thor/session"
+	"github.com/windhooked/thor/qor"
+	"github.com/windhooked/thor/qor/utils"
+	"github.com/windhooked/thor/roles"
+	"github.com/windhooked/thor/session"
 )
 
 // Context admin context, which is used for admin controller

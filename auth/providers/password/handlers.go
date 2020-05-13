@@ -4,11 +4,11 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/thor/auth"
-	"github.com/thor/auth/auth_identity"
-	"github.com/thor/auth/claims"
-	"github.com/thor/qor/utils"
-	"github.com/thor/session"
+	"github.com/windhooked/thor/auth"
+	"github.com/windhooked/thor/auth/auth_identity"
+	"github.com/windhooked/thor/auth/claims"
+	"github.com/windhooked/thor/qor/utils"
+	"github.com/windhooked/thor/session"
 )
 
 // DefaultAuthorizeHandler default authorize handler
@@ -23,7 +23,7 @@ var DefaultAuthorizeHandler = func(context *auth.Context) (*claims.Claims, error
 	req.ParseForm()
 	authInfo.Provider = provider.GetName()
 	authInfo.UID = strings.TrimSpace(req.Form.Get("login"))
-	//https://github.com/thor/qor-example/issues/155
+	//https://github.com/windhooked/thor/qor-example/issues/155
 	//if tx.Model(context.Auth.AuthIdentityModel).Where(authInfo).Scan(&authInfo).RecordNotFound() {
 	if tx.Model(context.Auth.AuthIdentityModel).Where(
 		map[string]interface{}{
@@ -71,7 +71,7 @@ var DefaultRegisterHandler = func(context *auth.Context) (*claims.Claims, error)
 
 	authInfo.Provider = provider.GetName()
 	authInfo.UID = strings.TrimSpace(req.Form.Get("login"))
-	//https://github.com/thor/qor-example/issues/155
+	//https://github.com/windhooked/thor/qor-example/issues/155
 	//if !tx.Model(context.Auth.AuthIdentityModel).Where(authInfo).Scan(&authInfo).RecordNotFound() {
 	if !tx.Model(context.Auth.AuthIdentityModel).Where(
 		map[string]interface{}{

@@ -3,8 +3,8 @@ package auth
 import (
 	"net/http"
 
-	"github.com/thor/auth/claims"
-	"github.com/thor/session"
+	"github.com/windhooked/thor/auth/claims"
+	"github.com/windhooked/thor/session"
 )
 
 // Context context

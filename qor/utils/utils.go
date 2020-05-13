@@ -20,7 +20,7 @@ import (
 	"github.com/jinzhu/gorm"
 	"github.com/jinzhu/now"
 	"github.com/microcosm-cc/bluemonday"
-	"github.com/thor/qor"
+	"github.com/windhooked/thor/qor"
 
 	"strings"
 )

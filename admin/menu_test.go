@@ -3,7 +3,7 @@ package admin
 import (
 	"testing"
 
-	"github.com/thor/qor"
+	"github.com/windhooked/thor/qor"
 )
 
 func generateResourceMenu(resource *Resource) *Menu {

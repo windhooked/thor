@@ -8,12 +8,12 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/thor/exchange"
-	csv_adaptor "github.com/thor/exchange/backends/csv"
-	"github.com/thor/exchange/tests"
-	"github.com/thor/qor"
-	"github.com/thor/qor/resource"
-	"github.com/thor/qor/test/utils"
+	"github.com/windhooked/thor/exchange"
+	csv_adaptor "github.com/windhooked/thor/exchange/backends/csv"
+	"github.com/windhooked/thor/exchange/tests"
+	"github.com/windhooked/thor/qor"
+	"github.com/windhooked/thor/qor/resource"
+	"github.com/windhooked/thor/qor/test/utils"
 )
 
 var db = utils.TestDB()

@@ -9,10 +9,10 @@ import (
 	"time"
 
 	"github.com/jinzhu/gorm"
-	"github.com/thor/qor"
-	"github.com/thor/qor/utils"
-	"github.com/thor/roles"
-	"github.com/thor/validations"
+	"github.com/windhooked/thor/qor"
+	"github.com/windhooked/thor/qor/utils"
+	"github.com/windhooked/thor/roles"
+	"github.com/windhooked/thor/validations"
 )
 
 // Metaor interface

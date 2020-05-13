@@ -3,7 +3,7 @@ package filesystem
 import (
 	"testing"
 
-	"github.com/thor/oss/tests"
+	"github.com/windhooked/thor/oss/tests"
 )
 
 func TestAll(t *testing.T) {

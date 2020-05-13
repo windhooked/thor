@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/thor/qor/utils"
+	"github.com/windhooked/thor/qor/utils"
 )
 
 // ClaimsContextKey authority claims key

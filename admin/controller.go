@@ -11,7 +11,7 @@ import (
 	"time"
 
 	"github.com/jinzhu/gorm"
-	"github.com/thor/responder"
+	"github.com/windhooked/thor/responder"
 )
 
 // Controller admin controller

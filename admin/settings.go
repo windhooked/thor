@@ -5,7 +5,7 @@ import (
 	"fmt"
 
 	"github.com/jinzhu/gorm"
-	"github.com/thor/qor"
+	"github.com/windhooked/thor/qor"
 )
 
 // SettingsStorageInterface settings storage interface

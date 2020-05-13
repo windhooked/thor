@@ -10,10 +10,10 @@ import (
 
 	"github.com/jinzhu/gorm"
 	"github.com/jinzhu/inflection"
-	"github.com/thor/qor"
-	"github.com/thor/qor/resource"
-	"github.com/thor/qor/utils"
-	"github.com/thor/roles"
+	"github.com/windhooked/thor/qor"
+	"github.com/windhooked/thor/qor/resource"
+	"github.com/windhooked/thor/qor/utils"
+	"github.com/windhooked/thor/roles"
 )
 
 // Config resource config struct

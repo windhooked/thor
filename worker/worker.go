@@ -8,10 +8,10 @@ import (
 	"runtime/debug"
 
 	"github.com/jinzhu/gorm"
-	"github.com/thor/admin"
-	"github.com/thor/qor"
-	"github.com/thor/qor/resource"
-	"github.com/thor/roles"
+	"github.com/windhooked/thor/admin"
+	"github.com/windhooked/thor/qor"
+	"github.com/windhooked/thor/qor/resource"
+	"github.com/windhooked/thor/roles"
 )
 
 const (
@@ -67,7 +67,7 @@ type Worker struct {
 // ConfigureQorResourceBeforeInitialize a method used to config Worker for qor admin
 func (worker *Worker) ConfigureQorResourceBeforeInitialize(res resource.Resourcer) {
 	if res, ok := res.(*admin.Resource); ok {
-		res.GetAdmin().RegisterViewPath("github.com/thor/worker/views")
+		res.GetAdmin().RegisterViewPath("github.com/windhooked/thor/worker/views")
 		res.UseTheme("worker")
 
 		worker.Admin = res.GetAdmin()

@@ -11,9 +11,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/thor/auth/claims"
-	"github.com/thor/responder"
-	"github.com/thor/session"
+	"github.com/windhooked/thor/auth/claims"
+	"github.com/windhooked/thor/responder"
+	"github.com/windhooked/thor/session"
 )
 
 func respondAfterLogged(claims *claims.Claims, context *Context) {

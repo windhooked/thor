@@ -6,8 +6,8 @@ import (
 	"net/http"
 
 	jwt "github.com/dgrijalva/jwt-go"
-	"github.com/thor/auth/claims"
-	"github.com/thor/session"
+	"github.com/windhooked/thor/auth/claims"
+	"github.com/windhooked/thor/session"
 )
 
 // SessionStorerInterface session storer interface for Auth

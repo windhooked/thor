@@ -3,9 +3,9 @@ package exchange
 import (
 	"reflect"
 
-	"github.com/thor/qor"
-	"github.com/thor/qor/resource"
-	"github.com/thor/roles"
+	"github.com/windhooked/thor/qor"
+	"github.com/windhooked/thor/qor/resource"
+	"github.com/windhooked/thor/roles"
 )
 
 // Meta defines importable/exportable fields

@@ -18,7 +18,7 @@ import (
 
 	"github.com/qiniu/api.v7/auth/qbox"
 	"github.com/qiniu/api.v7/storage"
-	"github.com/thor/oss"
+	"github.com/windhooked/thor/oss"
 )
 
 // Client Qiniu storage

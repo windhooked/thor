@@ -8,12 +8,12 @@ import (
 	"testing"
 
 	"github.com/360EntSecGroup-Skylar/excelize"
-	"github.com/thor/exchange"
-	"github.com/thor/exchange/backends/excel"
-	"github.com/thor/exchange/tests"
-	"github.com/thor/qor"
-	"github.com/thor/qor/resource"
-	"github.com/thor/qor/test/utils"
+	"github.com/windhooked/thor/exchange"
+	"github.com/windhooked/thor/exchange/backends/excel"
+	"github.com/windhooked/thor/exchange/tests"
+	"github.com/windhooked/thor/qor"
+	"github.com/windhooked/thor/qor/resource"
+	"github.com/windhooked/thor/qor/test/utils"
 )
 
 var db = utils.TestDB()

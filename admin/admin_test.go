@@ -3,8 +3,8 @@ package admin
 import (
 	"testing"
 
-	"github.com/thor/qor"
-	"github.com/thor/qor/test/utils"
+	"github.com/windhooked/thor/qor"
+	"github.com/windhooked/thor/qor/test/utils"
 )
 
 type User struct {

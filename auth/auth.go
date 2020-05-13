@@ -6,13 +6,13 @@ import (
 
 	jwt "github.com/dgrijalva/jwt-go"
 	"github.com/jinzhu/gorm"
-	"github.com/thor/auth/auth_identity"
-	"github.com/thor/auth/claims"
-	"github.com/thor/mailer"
-	"github.com/thor/mailer/logger"
-	"github.com/thor/redirect_back"
-	"github.com/thor/render"
-	"github.com/thor/session/manager"
+	"github.com/windhooked/thor/auth/auth_identity"
+	"github.com/windhooked/thor/auth/claims"
+	"github.com/windhooked/thor/mailer"
+	"github.com/windhooked/thor/mailer/logger"
+	"github.com/windhooked/thor/redirect_back"
+	"github.com/windhooked/thor/render"
+	"github.com/windhooked/thor/session/manager"
 )
 
 // Auth auth struct
@@ -25,9 +25,9 @@ type Auth struct {
 
 // Config auth config
 type Config struct {
-	// Default Database, which will be used in Auth when do CRUD, you can change a request's DB isntance by setting request Context's value, refer https://github.com/thor/auth/blob/master/utils.go#L32
+	// Default Database, which will be used in Auth when do CRUD, you can change a request's DB isntance by setting request Context's value, refer https://github.com/windhooked/thor/auth/blob/master/utils.go#L32
 	DB *gorm.DB
-	// AuthIdentityModel a model used to save auth info, like email/password, OAuth token, linked user's ID, https://github.com/thor/auth/blob/master/auth_identity/auth_identity.go is the default implemention
+	// AuthIdentityModel a model used to save auth info, like email/password, OAuth token, linked user's ID, https://github.com/windhooked/thor/auth/blob/master/auth_identity/auth_identity.go is the default implemention
 	AuthIdentityModel interface{}
 	// UserModel should be point of user struct's instance, it could be nil, then Auth will assume there is no user linked to auth info, and will return current auth info when get current user
 	UserModel interface{}
@@ -36,22 +36,22 @@ type Config struct {
 	// ViewPaths prepend views paths for auth
 	ViewPaths []string
 
-	// Auth is using [Render](https://github.com/thor/render) to render pages, you could configure it with your project's Render if you have advanced usage like [BindataFS](https://github.com/thor/bindatafs)
+	// Auth is using [Render](https://github.com/windhooked/thor/render) to render pages, you could configure it with your project's Render if you have advanced usage like [BindataFS](https://github.com/windhooked/thor/bindatafs)
 	Render *render.Render
-	// Auth is using [Mailer](https://github.com/thor/mailer) to send email, by default, it will print email into console, you need to configure it to send real one
+	// Auth is using [Mailer](https://github.com/windhooked/thor/mailer) to send email, by default, it will print email into console, you need to configure it to send real one
 	Mailer *mailer.Mailer
 	// UserStorer is an interface that defined how to get/save user, Auth provides a default one based on AuthIdentityModel, UserModel's definition
 	UserStorer UserStorerInterface
-	// SessionStorer is an interface that defined how to encode/validate/save/destroy session data and flash messages between requests, Auth provides a default method do the job, to use the default value, don't forgot to mount SessionManager's middleware into your router to save session data correctly. refer [session](https://github.com/thor/session) for more details
+	// SessionStorer is an interface that defined how to encode/validate/save/destroy session data and flash messages between requests, Auth provides a default method do the job, to use the default value, don't forgot to mount SessionManager's middleware into your router to save session data correctly. refer [session](https://github.com/windhooked/thor/session) for more details
 	SessionStorer SessionStorerInterface
 	// Redirector redirect user to a new page after registered, logged, confirmed...
 	Redirector RedirectorInterface
 
-	// LoginHandler defined behaviour when request `{Auth Prefix}/login`, default behaviour defined in http://godoc.org/github.com/thor/auth#pkg-variables
+	// LoginHandler defined behaviour when request `{Auth Prefix}/login`, default behaviour defined in http://godoc.org/github.com/windhooked/thor/auth#pkg-variables
 	LoginHandler func(*Context, func(*Context) (*claims.Claims, error))
-	// RegisterHandler defined behaviour when request `{Auth Prefix}/register`, default behaviour defined in http://godoc.org/github.com/thor/auth#pkg-variables
+	// RegisterHandler defined behaviour when request `{Auth Prefix}/register`, default behaviour defined in http://godoc.org/github.com/windhooked/thor/auth#pkg-variables
 	RegisterHandler func(*Context, func(*Context) (*claims.Claims, error))
-	// LogoutHandler defined behaviour when request `{Auth Prefix}/logout`, default behaviour defined in http://godoc.org/github.com/thor/auth#pkg-variables
+	// LogoutHandler defined behaviour when request `{Auth Prefix}/logout`, default behaviour defined in http://godoc.org/github.com/windhooked/thor/auth#pkg-variables
 	LogoutHandler func(*Context)
 }
 
@@ -116,7 +116,7 @@ func New(config *Config) *Auth {
 		config.Render.RegisterViewPath(viewPath)
 	}
 
-	config.Render.RegisterViewPath("github.com/thor/auth/views")
+	config.Render.RegisterViewPath("github.com/windhooked/thor/auth/views")
 
 	auth := &Auth{Config: config}
 

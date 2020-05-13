@@ -4,8 +4,8 @@ import (
 	"testing"
 
 	"github.com/jinzhu/configor"
-	"github.com/thor/oss/qiniu"
-	"github.com/thor/oss/tests"
+	"github.com/windhooked/thor/oss/qiniu"
+	"github.com/windhooked/thor/oss/tests"
 )
 
 type Config struct {

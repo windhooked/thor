@@ -4,7 +4,7 @@ import (
 	"time"
 
 	"github.com/jinzhu/gorm"
-	"github.com/thor/auth/claims"
+	"github.com/windhooked/thor/auth/claims"
 )
 
 // AuthIdentity auth identity session model

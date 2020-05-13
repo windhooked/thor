@@ -3,10 +3,10 @@ package dummy
 import (
 	"fmt"
 
-	"github.com/thor/admin"
-	"github.com/thor/media"
-	"github.com/thor/qor"
-	"github.com/thor/qor/test/utils"
+	"github.com/windhooked/thor/admin"
+	"github.com/windhooked/thor/media"
+	"github.com/windhooked/thor/qor"
+	"github.com/windhooked/thor/qor/test/utils"
 )
 
 // NewDummyAdmin generate admin for dummy app

@@ -11,10 +11,10 @@ import (
 
 	"github.com/fatih/color"
 	"github.com/jinzhu/gorm"
-	"github.com/thor/admin"
-	"github.com/thor/qor"
-	"github.com/thor/qor/test/utils"
-	"github.com/thor/widget"
+	"github.com/windhooked/thor/admin"
+	"github.com/windhooked/thor/qor"
+	"github.com/windhooked/thor/qor/test/utils"
+	"github.com/windhooked/thor/widget"
 )
 
 var db *gorm.DB
@@ -44,7 +44,7 @@ func setup() {
 	Widgets = widget.New(&widget.Config{
 		DB: db,
 	})
-	Widgets.RegisterViewPath("github.com/thor/widget/test")
+	Widgets.RegisterViewPath("github.com/windhooked/thor/widget/test")
 
 	Admin = admin.New(&qor.Config{DB: db})
 	Admin.AddResource(Widgets)

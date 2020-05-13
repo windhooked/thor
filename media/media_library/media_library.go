@@ -11,16 +11,16 @@ import (
 	"strings"
 
 	"github.com/jinzhu/gorm"
-	"github.com/thor/admin"
-	"github.com/thor/media"
-	"github.com/thor/media/oss"
-	"github.com/thor/qor"
-	"github.com/thor/qor/resource"
-	"github.com/thor/qor/utils"
+	"github.com/windhooked/thor/admin"
+	"github.com/windhooked/thor/media"
+	"github.com/windhooked/thor/media/oss"
+	"github.com/windhooked/thor/qor"
+	"github.com/windhooked/thor/qor/resource"
+	"github.com/windhooked/thor/qor/utils"
 )
 
 func init() {
-	admin.RegisterViewPath("github.com/thor/media/media_library/views")
+	admin.RegisterViewPath("github.com/windhooked/thor/media/media_library/views")
 }
 
 type MediaLibraryInterface interface {

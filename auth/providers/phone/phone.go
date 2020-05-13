@@ -1,6 +1,6 @@
 package phone
 
-import "github.com/thor/auth"
+import "github.com/windhooked/thor/auth"
 
 func New() *PhoneProvider {
 	return &PhoneProvider{}

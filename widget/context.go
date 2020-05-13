@@ -6,9 +6,9 @@ import (
 	"reflect"
 
 	"github.com/jinzhu/gorm"
-	"github.com/thor/admin"
-	"github.com/thor/qor"
-	"github.com/thor/qor/utils"
+	"github.com/windhooked/thor/admin"
+	"github.com/windhooked/thor/qor"
+	"github.com/windhooked/thor/qor/utils"
 )
 
 // Context widget context

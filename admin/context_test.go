@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/thor/admin"
-	. "github.com/thor/admin/tests/dummy"
-	"github.com/thor/qor"
+	"github.com/windhooked/thor/admin"
+	. "github.com/windhooked/thor/admin/tests/dummy"
+	"github.com/windhooked/thor/qor"
 )
 
 // Template helpers test

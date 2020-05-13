@@ -1,6 +1,6 @@
 package exchange
 
-import "github.com/thor/qor"
+import "github.com/windhooked/thor/qor"
 
 // Progress defined importing/exporting progress
 type Progress struct {

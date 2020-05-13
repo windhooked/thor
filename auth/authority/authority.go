@@ -4,10 +4,10 @@ import (
 	"html/template"
 	"net/http"
 
-	"github.com/thor/auth"
-	"github.com/thor/middlewares"
-	"github.com/thor/roles"
-	"github.com/thor/session"
+	"github.com/windhooked/thor/auth"
+	"github.com/windhooked/thor/middlewares"
+	"github.com/windhooked/thor/roles"
+	"github.com/windhooked/thor/session"
 )
 
 var (

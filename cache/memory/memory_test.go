@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/thor/cache"
+	"github.com/windhooked/thor/cache"
 )
 
 var client cache.CacheStoreInterface

@@ -3,8 +3,8 @@ package activity
 import (
 	"net/http"
 
-	"github.com/thor/admin"
-	"github.com/thor/responder"
+	"github.com/windhooked/thor/admin"
+	"github.com/windhooked/thor/responder"
 )
 
 type controller struct {

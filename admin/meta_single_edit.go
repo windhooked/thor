@@ -3,7 +3,7 @@ package admin
 import (
 	"errors"
 
-	"github.com/thor/qor/resource"
+	"github.com/windhooked/thor/qor/resource"
 )
 
 // SingleEditConfig meta configuration used for single edit

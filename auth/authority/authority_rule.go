@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/thor/roles"
+	"github.com/windhooked/thor/roles"
 )
 
 // Rule authority rule's definition

@@ -1,9 +1,9 @@
 package worker
 
 import (
-	"github.com/thor/admin"
-	"github.com/thor/qor"
-	"github.com/thor/roles"
+	"github.com/windhooked/thor/admin"
+	"github.com/windhooked/thor/qor"
+	"github.com/windhooked/thor/roles"
 )
 
 // Job is a struct that hold Qor Job definations

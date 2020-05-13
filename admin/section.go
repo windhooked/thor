@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/thor/qor/utils"
+	"github.com/windhooked/thor/qor/utils"
 )
 
 // Section is used to structure forms, it could group your fields into sections, to make your form clean & tidy

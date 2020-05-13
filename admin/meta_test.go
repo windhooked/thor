@@ -4,11 +4,11 @@ import (
 	"reflect"
 	"testing"
 
-	. "github.com/thor/admin/tests/dummy"
+	. "github.com/windhooked/thor/admin/tests/dummy"
 
-	"github.com/thor/admin"
-	"github.com/thor/qor"
-	"github.com/thor/qor/resource"
+	"github.com/windhooked/thor/admin"
+	"github.com/windhooked/thor/qor"
+	"github.com/windhooked/thor/qor/resource"
 )
 
 func TestTextInput(t *testing.T) {

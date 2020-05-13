@@ -5,10 +5,10 @@ import (
 	"reflect"
 
 	"github.com/jinzhu/gorm"
-	"github.com/thor/qor"
-	"github.com/thor/qor/resource"
-	"github.com/thor/roles"
-	"github.com/thor/validations"
+	"github.com/windhooked/thor/qor"
+	"github.com/windhooked/thor/qor/resource"
+	"github.com/windhooked/thor/roles"
+	"github.com/windhooked/thor/validations"
 )
 
 // Resource defined an exchange resource, which includes importing/exporting fields definitions

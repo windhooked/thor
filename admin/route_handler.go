@@ -3,8 +3,8 @@ package admin
 import (
 	"strings"
 
-	"github.com/thor/qor"
-	"github.com/thor/roles"
+	"github.com/windhooked/thor/qor"
+	"github.com/windhooked/thor/roles"
 )
 
 // RouteConfig config for admin routes

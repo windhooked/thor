@@ -3,8 +3,8 @@ package admin
 import (
 	"path"
 
-	"github.com/thor/qor"
-	"github.com/thor/roles"
+	"github.com/windhooked/thor/qor"
+	"github.com/windhooked/thor/roles"
 )
 
 // GetMenus get all sidebar menus for admin

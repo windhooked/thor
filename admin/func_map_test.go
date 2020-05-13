@@ -6,7 +6,7 @@ import (
 	"testing"
 
 	"github.com/fatih/color"
-	"github.com/thor/qor"
+	"github.com/windhooked/thor/qor"
 )
 
 type rawTestCase struct {
