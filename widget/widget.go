@@ -7,11 +7,11 @@ import (
 	"path/filepath"
 
 	"github.com/jinzhu/gorm"
-	"github.com/thor/admin"
-	"github.com/thor/assetfs"
-	"github.com/thor/qor/resource"
-	"github.com/thor/qor/utils"
-	"github.com/thor/roles"
+	"github.com/windhooked/thor/admin"
+	"github.com/windhooked/thor/assetfs"
+	"github.com/windhooked/thor/qor/resource"
+	"github.com/windhooked/thor/qor/utils"
+	"github.com/windhooked/thor/roles"
 )
 
 var (
