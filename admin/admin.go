@@ -7,13 +7,13 @@ import (
 
 	"github.com/jinzhu/gorm"
 	"github.com/jinzhu/inflection"
-	"github.com/thor/assetfs"
-	"github.com/thor/qor"
-	"github.com/thor/qor/resource"
-	"github.com/thor/qor/utils"
-	"github.com/thor/session"
-	"github.com/thor/session/manager"
-	"github.com/theplant/cldr"
+	"github.com/windhooked/thor/assetfs"
+	"github.com/windhooked/thor/qor"
+	"github.com/windhooked/thor/qor/resource"
+	"github.com/windhooked/thor/qor/utils"
+	"github.com/windhooked/thor/session"
+	"github.com/windhooked/thor/session/manager"
+	"github.com/windhooked/thor/theplant/cldr"
 )
 
 // AdminConfig admin config struct

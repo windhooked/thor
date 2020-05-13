@@ -5,10 +5,10 @@ import (
 	"path/filepath"
 	"reflect"
 
-	"github.com/thor/assetfs"
-	"github.com/thor/qor"
-	"github.com/thor/qor/utils"
-	"github.com/thor/roles"
+	"github.com/windhooked/thor/assetfs"
+	"github.com/windhooked/thor/qor"
+	"github.com/windhooked/thor/qor/utils"
+	"github.com/windhooked/thor/roles"
 )
 
 var (
