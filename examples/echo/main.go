@@ -14,9 +14,9 @@ import (
 
 	"github.com/windhooked/thor/admin"
 	"github.com/windhooked/thor/auth"
+	"github.com/windhooked/thor/auth/auth_identity"
 	"github.com/windhooked/thor/auth_themes/clean"
 	"github.com/windhooked/thor/qor"
-	"github.com/windhooked/thor/qor/auth/auth_identity"
 	"github.com/windhooked/thor/session/manager"
 )
 

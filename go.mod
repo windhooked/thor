@@ -29,7 +29,7 @@ require (
 	github.com/jinzhu/gorm v1.9.12
 	github.com/jinzhu/inflection v1.0.0
 	github.com/jinzhu/now v1.1.1
-	github.com/kataras/iris/v12 v12.1.8 // indirect
+	github.com/json-iterator/go v1.1.9 // indirect
 	github.com/labstack/echo v3.3.10+incompatible
 	github.com/labstack/gommon v0.3.0 // indirect
 	github.com/lib/pq v1.5.2
@@ -39,25 +39,22 @@ require (
 	github.com/patrickmn/go-cache v2.1.0+incompatible // indirect
 	github.com/qiniu/api.v7 v7.2.5+incompatible
 	github.com/qiniu/x v7.0.8+incompatible // indirect
-	github.com/qor/admin v0.0.0-20200315024928-877b98a68a6f // indirect
+	github.com/qor/admin v0.0.0-20200315024928-877b98a68a6f
 	github.com/qor/assetfs v0.0.0-20170713023933-ff57fdc13a14 // indirect
 	github.com/qor/audited v0.0.0-20171228121055-b52c9c2f0571 // indirect
-	github.com/qor/cache v0.0.0-20171031031927-c9d48d1f13ba // indirect
-	github.com/qor/i18n v0.0.0-20181014061908-f7206d223bcd // indirect
-	github.com/qor/mailer v0.0.0-20180329083248-0555e49f99ac // indirect
+	github.com/qor/l10n v0.0.0-20181031091737-2ca95fb3b4dd
 	github.com/qor/media v0.0.0-20191022071353-19cf289e17d4 // indirect
 	github.com/qor/middlewares v0.0.0-20170822143614-781378b69454 // indirect
 	github.com/qor/oss v0.0.0-20191031055114-aef9ba66bf76 // indirect
-	github.com/qor/qor v0.0.0-20200224122013-457d2e3f50e1 // indirect
-	github.com/qor/render v1.1.1 // indirect
+	github.com/qor/publish v0.0.0-20181014061411-abfbacee9e0d
+	github.com/qor/qor v0.0.0-20200224122013-457d2e3f50e1
 	github.com/qor/responder v0.0.0-20171031032654-b6def473574f // indirect
-	github.com/qor/roles v0.0.0-20171127035124-d6375609fe3e // indirect
+	github.com/qor/roles v0.0.0-20171127035124-d6375609fe3e
 	github.com/qor/serializable_meta v0.0.0-20180510060738-5fd8542db417 // indirect
 	github.com/qor/session v0.0.0-20170907035918-8206b0adab70 // indirect
 	github.com/qor/validations v0.0.0-20171228122639-f364bca61b46 // indirect
 	github.com/qor/worker v0.0.0-20190805090529-35a245417f70 // indirect
 	github.com/satori/go.uuid v1.2.0 // indirect
-	github.com/shurcooL/sanitized_anchor_name v1.0.0 // indirect
 	github.com/tealeg/xlsx v1.0.5
 	github.com/theplant/cldr v0.0.0-20190423050709-9f76f7ce4ee8
 	github.com/theplant/htmltestingutils v0.0.0-20190423050759-0e06de7b6967
