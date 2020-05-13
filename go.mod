@@ -6,6 +6,7 @@ require (
 	github.com/360EntSecGroup-Skylar/excelize v1.4.1
 	github.com/aliyun/aliyun-oss-go-sdk v2.1.0+incompatible
 	github.com/andybalholm/cascadia v1.2.0 // indirect
+	github.com/asaskevich/govalidator v0.0.0-20200428143746-21a406dcc535
 	github.com/aws/aws-sdk-go v1.30.26
 	github.com/baiyubin/aliyun-sts-go-sdk v0.0.0-20180326062324-cfa1a18b161f // indirect
 	github.com/bradfitz/gomemcache v0.0.0-20190913173617-a41fca850d0b
@@ -14,9 +15,12 @@ require (
 	github.com/fatih/color v1.9.0
 	github.com/garyburd/redigo v1.6.0 // indirect
 	github.com/ghodss/yaml v1.0.0
+	github.com/go-gomail/gomail v0.0.0-20160411212932-81ebce5c23df
 	github.com/go-sql-driver/mysql v1.5.0
 	github.com/google/go-github v17.0.0+incompatible
 	github.com/google/go-querystring v1.0.0 // indirect
+	github.com/gorilla/context v1.1.1 // indirect
+	github.com/gorilla/sessions v1.2.0 // indirect
 	github.com/gosimple/slug v1.9.0
 	github.com/jinzhu/configor v1.2.0
 	github.com/jinzhu/copier v0.0.0-20190924061706-b57f9002281a
@@ -32,6 +36,17 @@ require (
 	github.com/mrjones/oauth v0.0.0-20190623134757-126b35219450
 	github.com/qiniu/api.v7 v7.2.5+incompatible
 	github.com/qiniu/x v7.0.8+incompatible // indirect
+	github.com/qor/admin v0.0.0-20200315024928-877b98a68a6f
+	github.com/qor/assetfs v0.0.0-20170713023933-ff57fdc13a14
+	github.com/qor/audited v0.0.0-20171228121055-b52c9c2f0571
+	github.com/qor/mailer v0.0.0-20180329083248-0555e49f99ac
+	github.com/qor/middlewares v0.0.0-20170822143614-781378b69454
+	github.com/qor/qor v0.0.0-20200224122013-457d2e3f50e1
+	github.com/qor/render v1.1.1
+	github.com/qor/responder v0.0.0-20171031032654-b6def473574f
+	github.com/qor/roles v0.0.0-20171127035124-d6375609fe3e // indirect
+	github.com/qor/session v0.0.0-20170907035918-8206b0adab70
+	github.com/qor/validations v0.0.0-20171228122639-f364bca61b46
 	github.com/satori/go.uuid v1.2.0 // indirect
 	github.com/shurcooL/sanitized_anchor_name v1.0.0 // indirect
 	github.com/tealeg/xlsx v1.0.5
