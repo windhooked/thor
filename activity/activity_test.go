@@ -10,11 +10,11 @@ import (
 	"testing"
 
 	"github.com/jinzhu/gorm"
-	"github.com/qor/admin"
-	"github.com/qor/l10n"
-	"github.com/qor/qor"
-	"github.com/qor/qor/test/utils"
-	"github.com/qor/roles"
+	"github.com/thor/admin"
+	"github.com/thor/l10n"
+	"github.com/thor/qor"
+	"github.com/thor/qor/test/utils"
+	"github.com/thor/roles"
 	"github.com/theplant/testingutils"
 )
 

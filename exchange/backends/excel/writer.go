@@ -2,10 +2,10 @@ package excel
 
 import (
 	"github.com/360EntSecGroup-Skylar/excelize"
-	"github.com/qor/exchange"
-	"github.com/qor/qor"
-	"github.com/qor/qor/resource"
-	"github.com/qor/roles"
+	"github.com/thor/exchange"
+	"github.com/thor/qor"
+	"github.com/thor/qor/resource"
+	"github.com/thor/roles"
 )
 
 // NewWriter new csv writer

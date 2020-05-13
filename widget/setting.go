@@ -6,11 +6,11 @@ import (
 	"time"
 
 	"github.com/jinzhu/gorm"
-	"github.com/qor/admin"
-	"github.com/qor/qor"
-	"github.com/qor/qor/resource"
-	"github.com/qor/qor/utils"
-	"github.com/qor/serializable_meta"
+	"github.com/thor/admin"
+	"github.com/thor/qor"
+	"github.com/thor/qor/resource"
+	"github.com/thor/qor/utils"
+	"github.com/thor/serializable_meta"
 )
 
 // QorWidgetSettingInterface qor widget setting interface

@@ -1,6 +1,6 @@
 package widget
 
-import "github.com/qor/qor/utils"
+import "github.com/thor/qor/utils"
 
 var registeredScopes []*Scope
 

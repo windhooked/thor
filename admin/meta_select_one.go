@@ -8,9 +8,9 @@ import (
 	"reflect"
 
 	"github.com/jinzhu/gorm"
-	"github.com/qor/qor"
-	"github.com/qor/qor/resource"
-	"github.com/qor/qor/utils"
+	"github.com/thor/qor"
+	"github.com/thor/qor/resource"
+	"github.com/thor/qor/utils"
 )
 
 // SelectOneConfig meta configuration used for select one

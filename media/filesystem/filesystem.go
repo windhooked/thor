@@ -5,7 +5,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/qor/media"
+	"github.com/thor/media"
 )
 
 var _ media.Media = &FileSystem{}

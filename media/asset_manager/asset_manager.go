@@ -8,9 +8,9 @@ import (
 	"regexp"
 
 	"github.com/jinzhu/gorm"
-	"github.com/qor/admin"
-	"github.com/qor/media/oss"
-	"github.com/qor/qor/resource"
+	"github.com/thor/admin"
+	"github.com/thor/media/oss"
+	"github.com/thor/qor/resource"
 )
 
 // AssetManager defined a asset manager that could be used to manage assets in qor admin

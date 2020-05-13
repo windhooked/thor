@@ -5,13 +5,13 @@ import (
 	"strings"
 
 	"github.com/jinzhu/gorm"
-	"github.com/qor/admin"
-	"github.com/qor/audited"
-	"github.com/qor/media/asset_manager"
-	"github.com/qor/qor"
-	"github.com/qor/qor/resource"
-	"github.com/qor/qor/utils"
-	"github.com/qor/validations"
+	"github.com/thor/admin"
+	"github.com/thor/audited"
+	"github.com/thor/media/asset_manager"
+	"github.com/thor/qor"
+	"github.com/thor/qor/resource"
+	"github.com/thor/qor/utils"
+	"github.com/thor/validations"
 )
 
 // QorActivity default model used to save resource's activities
@@ -75,7 +75,7 @@ func Register(res *admin.Resource) {
 		})
 	}
 
-	res.GetAdmin().RegisterViewPath("github.com/qor/activity/views")
+	res.GetAdmin().RegisterViewPath("github.com/thor/activity/views")
 	res.UseTheme("activity")
 
 	qorAdmin.RegisterFuncMap("activity_resource", func() *admin.Resource {

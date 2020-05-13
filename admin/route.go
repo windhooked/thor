@@ -10,9 +10,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/qor/qor"
-	"github.com/qor/qor/utils"
-	"github.com/qor/roles"
+	"github.com/thor/qor"
+	"github.com/thor/qor/utils"
+	"github.com/thor/roles"
 )
 
 // Middleware is a way to filter a request and response coming into your application

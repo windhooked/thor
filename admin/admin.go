@@ -7,12 +7,12 @@ import (
 
 	"github.com/jinzhu/gorm"
 	"github.com/jinzhu/inflection"
-	"github.com/qor/assetfs"
-	"github.com/qor/qor"
-	"github.com/qor/qor/resource"
-	"github.com/qor/qor/utils"
-	"github.com/qor/session"
-	"github.com/qor/session/manager"
+	"github.com/thor/assetfs"
+	"github.com/thor/qor"
+	"github.com/thor/qor/resource"
+	"github.com/thor/qor/utils"
+	"github.com/thor/session"
+	"github.com/thor/session/manager"
 	"github.com/theplant/cldr"
 )
 
@@ -99,7 +99,7 @@ func (admin *Admin) SetAssetFS(assetFS assetfs.Interface) {
 	globalAssetFSes = append(globalAssetFSes, assetFS)
 
 	admin.AssetFS.RegisterPath(filepath.Join(utils.AppRoot, "app/views/qor"))
-	admin.RegisterViewPath("github.com/qor/admin/views")
+	admin.RegisterViewPath("github.com/thor/admin/views")
 
 	for _, viewPath := range globalViewPaths {
 		admin.RegisterViewPath(viewPath)

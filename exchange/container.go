@@ -1,8 +1,8 @@
 package exchange
 
 import (
-	"github.com/qor/qor"
-	"github.com/qor/qor/resource"
+	"github.com/thor/qor"
+	"github.com/thor/qor/resource"
 )
 
 // Container is an interface, any exporting/importing backends needs to implement this

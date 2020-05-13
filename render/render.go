@@ -6,8 +6,8 @@ import (
 	"net/http"
 	"path/filepath"
 
-	"github.com/qor/assetfs"
-	"github.com/qor/qor/utils"
+	"github.com/thor/assetfs"
+	"github.com/thor/qor/utils"
 )
 
 // DefaultLayout default layout name

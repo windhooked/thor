@@ -10,9 +10,9 @@ import (
 	"testing"
 
 	"github.com/jinzhu/gorm"
-	"github.com/qor/media"
-	"github.com/qor/media/filesystem"
-	"github.com/qor/qor/test/utils"
+	"github.com/thor/media"
+	"github.com/thor/media/filesystem"
+	"github.com/thor/qor/test/utils"
 )
 
 var db = utils.TestDB()

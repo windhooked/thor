@@ -4,14 +4,14 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/qor/admin"
-	"github.com/qor/qor"
-	"github.com/qor/qor/resource"
-	"github.com/qor/qor/utils"
+	"github.com/thor/admin"
+	"github.com/thor/qor"
+	"github.com/thor/qor/resource"
+	"github.com/thor/qor/utils"
 )
 
 func init() {
-	admin.RegisterViewPath("github.com/qor/location/views")
+	admin.RegisterViewPath("github.com/thor/location/views")
 }
 
 var (
