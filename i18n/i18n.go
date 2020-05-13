@@ -17,7 +17,7 @@ import (
 	"github.com/windhooked/thor/qor"
 	"github.com/windhooked/thor/qor/resource"
 	"github.com/windhooked/thor/qor/utils"
-	"github.com/theplant/cldr"
+	"github.com/windhooked/thor/theplant/cldr"
 )
 
 // Default default locale for i18n
