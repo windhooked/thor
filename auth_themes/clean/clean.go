@@ -26,7 +26,8 @@ func New(config *auth.Config) *auth.Auth {
 	if config == nil {
 		config = &auth.Config{}
 	}
-	config.ViewPaths = append(config.ViewPaths, "github.com/windhooked/thor/auth_themes/clean/views")
+	//config.ViewPaths = append(config.ViewPaths, "github.com/windhooked/thor/auth_themes/clean/views")
+	config.ViewPaths = append(config.ViewPaths, "auth_themes/clean/views")
 
 	if config.DB == nil {
 		fmt.Print("Please configure *gorm.DB for Auth theme clean")
@@ -35,16 +36,17 @@ func New(config *auth.Config) *auth.Auth {
 	if config.Render == nil {
 		yamlBackend := yaml.New()
 		I18n := i18n.New(yamlBackend)
-		for _, gopath := range append([]string{filepath.Join(utils.AppRoot, "vendor")}, utils.GOPATH()...) {
-			filePath := filepath.Join(gopath, "src", "github.com/windhooked/thor/auth_themes/clean/locales/en-US.yml")
-			if content, err := ioutil.ReadFile(filePath); err == nil {
-				translations, _ := yamlBackend.LoadYAMLContent(content)
-				for _, translation := range translations {
-					I18n.AddTranslation(translation)
-				}
-				break
+		//for _, gopath := range append([]string{filepath.Join(utils.AppRoot, "vendor")}, utils.GOPATH()...) {
+		//filePath := filepath.Join(gopath, "src", "github.com/windhooked/thor/auth_themes/clean/locales/en-US.yml")
+		filePath := filepath.Join(utils.AppRoot, "auth_themes/clean/locales/en-US.yml")
+		if content, err := ioutil.ReadFile(filePath); err == nil {
+			translations, _ := yamlBackend.LoadYAMLContent(content)
+			for _, translation := range translations {
+				I18n.AddTranslation(translation)
 			}
+			//break
 		}
+		//}
 
 		config.Render = render.New(&render.Config{
 			FuncMapMaker: func(render *render.Render, req *http.Request, w http.ResponseWriter) template.FuncMap {
@@ -74,7 +76,7 @@ func New(config *auth.Config) *auth.Auth {
 
 	if Auth.Config.DB != nil {
 		// Migrate Auth Identity model
-		Auth.Config.DB.AutoMigrate(Auth.Config.AuthIdentityModel)
+		Auth.Config.DB.AutoMigrate(Auth.Config.AuthIdentityModel, Auth.Config.AuthIdentityModel)
 	}
 	return Auth
 }

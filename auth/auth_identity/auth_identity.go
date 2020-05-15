@@ -10,8 +10,8 @@ import (
 // AuthIdentity auth identity session model
 type AuthIdentity struct {
 	gorm.Model
-	Basic
-	SignLogs
+	Basic    // `gorm:"foreignkey:Key;association_foreignkey:Key"`
+	SignLogs // `gorm:"association_autoupdate:true;association_autocreate:true"`
 }
 
 // Basic basic information about auth identity

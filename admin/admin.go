@@ -99,7 +99,8 @@ func (admin *Admin) SetAssetFS(assetFS assetfs.Interface) {
 	globalAssetFSes = append(globalAssetFSes, assetFS)
 
 	admin.AssetFS.RegisterPath(filepath.Join(utils.AppRoot, "app/views/qor"))
-	admin.RegisterViewPath("github.com/windhooked/thor/admin/views")
+	//admin.RegisterViewPath("github.com/windhooked/thor/admin/views")
+	admin.RegisterViewPath("admin/views")
 
 	for _, viewPath := range globalViewPaths {
 		admin.RegisterViewPath(viewPath)
@@ -107,6 +108,8 @@ func (admin *Admin) SetAssetFS(assetFS assetfs.Interface) {
 }
 
 // RegisterViewPath register view path for admin
+// GOPATH/src/ ...
+// app root / vendor /
 func (admin *Admin) RegisterViewPath(pth string) {
 	if admin.AssetFS.RegisterPath(filepath.Join(utils.AppRoot, "vendor", pth)) != nil {
 		for _, gopath := range utils.GOPATH() {

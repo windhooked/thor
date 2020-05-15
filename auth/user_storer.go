@@ -42,7 +42,12 @@ func (UserStorer) Get(Claims *claims.Claims, context *Context) (user interface{}
 		}
 	)
 
-	if !tx.Where(authInfo).First(authIdentity).RecordNotFound() {
+	//if !tx.Where(authInfo).First(authIdentity).RecordNotFound() {
+	if !tx.Where(
+		map[string]interface{}{
+			"provider": authInfo.Provider,
+			"uid":      authInfo.UID,
+		}).First(authIdentity).RecordNotFound() {
 		if context.Auth.Config.UserModel != nil {
 			if authBasicInfo, ok := authIdentity.(interface {
 				ToClaims() *claims.Claims

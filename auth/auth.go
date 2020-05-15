@@ -116,7 +116,8 @@ func New(config *Config) *Auth {
 		config.Render.RegisterViewPath(viewPath)
 	}
 
-	config.Render.RegisterViewPath("github.com/windhooked/thor/auth/views")
+	//config.Render.RegisterViewPath("github.com/windhooked/thor/auth/views")
+	config.Render.RegisterViewPath("auth/views")
 
 	auth := &Auth{Config: config}
 

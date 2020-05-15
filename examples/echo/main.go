@@ -27,6 +27,8 @@ type User struct {
 	Name     string
 	Gender   string
 	Role     string
+	Basic    auth_identity.Basic
+	SignLog  auth_identity.SignLog
 }
 
 type AdminAuth struct{}
@@ -38,6 +40,7 @@ var (
 		DB:                DB,
 		UserModel:         &User{},
 		AuthIdentityModel: &auth_identity.AuthIdentity{},
+		ViewPaths:         []string{"auth/views"},
 	})
 )
 
@@ -67,8 +70,8 @@ func (AdminAuth) GetCurrentUser(c *admin.Context) qor.CurrentUser {
 
 func main() {
 	// Setup DB
-	DB.AutoMigrate(&User{})
 	DB.LogMode(true)
+	DB.AutoMigrate(&User{}, &auth_identity.AuthIdentity{}, &auth_identity.Basic{}, &auth_identity.SignLogs{})
 
 	// Setup Admin
 	Admin := admin.New(&admin.AdminConfig{
